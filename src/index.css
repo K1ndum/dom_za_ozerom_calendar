@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  max-width: 550px;
+  display: flex;
+  justify-self: center;
+}
+
+h1 {
+  width: 50%;
+}
+
+.booked {
+  background-color: rgb(57, 57, 57) !important;
+  color: white !important;
+}
+
+.bookedExample {
+  background-color: rgb(57, 57, 57) !important;
+  color: white;
+  padding: 5px 15px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.react-calendar__tile--now {
+  background: #0281ff75 !important;
+  color: white !important;
+}
+
+.nowExample {
+  background-color: #0281ff75 !important;
+  color: white;
+  padding: 5px 15px;
+  margin-left: 5px;
+  border-radius: 50%;
+}
+
+.mainContainer {
+  display: flex;
+  justify-content: center;
+  margin: 10px 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar {
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  margin-bottom: 10px;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  font-weight: 900 !important;
+}
+
+.react-calendar__month-view__days__day--neighboringMonth {
+  color: rgb(58, 58, 58) !important;
+}
+
+.react-calendar__navigation__label {
+  font-weight: 600 !important;
+}
+
+.react-calendar {
+  border-radius: 10px !important;
+  border: 2px rgb(0, 0, 0) solid !important;
+  background: #0099cc23 !important;
+  font-weight: 600 !important;
+}
+
+.text {
+  margin: 10px 0;
+}
+
+.phone {
+  text-decoration: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.image {
+  align-self: center;
+  width: 80px;
+  height: 80px;
+  background-image: url(./source/dom_za_ozerom.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+  border-radius: 50%;
+  border: 5px rgb(124, 124, 124) solid
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.react-calendar {
+  width: 100% !important;
+}
+
+.loading {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 300px;
+}
+
+.loadingText {
+  align-self: center;
+  display: inline-block; height: 1em; width: 0ch;
+  overflow: hidden; margin-right: 6ch;
+  vertical-align: top; color: #000000;
+  font-weight: 600;
+  animation: shrink steps(6) 3s infinite alternate;
+}
+
+@keyframes shrink {
+  0%, 10% { width: 0ch; margin-right: 6ch; }
+  40%, 100% { width: 6ch; margin-right: 0ch; }
+}
+
+.errorMessage {
+  display: flex;
+  flex-direction: column;
+}
