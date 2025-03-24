@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/dom_za_ozerom_calendar/static/css/main.201a9b1f.css",
-    "main.js": "/dom_za_ozerom_calendar/static/js/main.ac22ac2a.js",
+    "main.js": "/dom_za_ozerom_calendar/static/js/main.b0b66613.js",
     "static/js/453.cfeb24b8.chunk.js": "/dom_za_ozerom_calendar/static/js/453.cfeb24b8.chunk.js",
     "static/media/dom_za_ozerom.jpg": "/dom_za_ozerom_calendar/static/media/dom_za_ozerom.12be5140e767e12f6126.jpg",
     "index.html": "/dom_za_ozerom_calendar/index.html",
     "main.201a9b1f.css.map": "/dom_za_ozerom_calendar/static/css/main.201a9b1f.css.map",
-    "main.ac22ac2a.js.map": "/dom_za_ozerom_calendar/static/js/main.ac22ac2a.js.map",
+    "main.b0b66613.js.map": "/dom_za_ozerom_calendar/static/js/main.b0b66613.js.map",
     "453.cfeb24b8.chunk.js.map": "/dom_za_ozerom_calendar/static/js/453.cfeb24b8.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.201a9b1f.css",
-    "static/js/main.ac22ac2a.js"
+    "static/js/main.b0b66613.js"
   ]
 }
