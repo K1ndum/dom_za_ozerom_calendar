@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/dom_za_ozerom_calendar/static/css/main.201a9b1f.css",
-    "main.js": "/dom_za_ozerom_calendar/static/js/main.b0b66613.js",
+    "main.css": "/dom_za_ozerom_calendar/static/css/main.5ff6b78d.css",
+    "main.js": "/dom_za_ozerom_calendar/static/js/main.321214e5.js",
     "static/js/453.cfeb24b8.chunk.js": "/dom_za_ozerom_calendar/static/js/453.cfeb24b8.chunk.js",
     "static/media/dom_za_ozerom.jpg": "/dom_za_ozerom_calendar/static/media/dom_za_ozerom.12be5140e767e12f6126.jpg",
     "index.html": "/dom_za_ozerom_calendar/index.html",
-    "main.201a9b1f.css.map": "/dom_za_ozerom_calendar/static/css/main.201a9b1f.css.map",
-    "main.b0b66613.js.map": "/dom_za_ozerom_calendar/static/js/main.b0b66613.js.map",
+    "main.5ff6b78d.css.map": "/dom_za_ozerom_calendar/static/css/main.5ff6b78d.css.map",
+    "main.321214e5.js.map": "/dom_za_ozerom_calendar/static/js/main.321214e5.js.map",
     "453.cfeb24b8.chunk.js.map": "/dom_za_ozerom_calendar/static/js/453.cfeb24b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.201a9b1f.css",
-    "static/js/main.b0b66613.js"
+    "static/css/main.5ff6b78d.css",
+    "static/js/main.321214e5.js"
   ]
 }
