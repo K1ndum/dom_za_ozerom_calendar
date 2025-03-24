@@ -120,19 +120,24 @@ h1 {
 
 .loadingText {
   align-self: center;
-  display: inline-block; height: 1em; width: 0ch;
-  overflow: hidden; margin-right: 6ch;
+  display: inline-block; height: 3em; width: 0ch;
+  overflow: hidden; margin-right: 10ch;
   vertical-align: top; color: #000000;
   font-weight: 600;
   animation: shrink steps(6) 3s infinite alternate;
 }
 
 @keyframes shrink {
-  0%, 10% { width: 0ch; margin-right: 6ch; }
-  40%, 100% { width: 6ch; margin-right: 0ch; }
+  0%, 10% { width: 0ch; margin-right: 10ch; }
+  40%, 100% { width: 10ch; margin-right: 0ch; }
 }
 
 .errorMessage {
   display: flex;
   flex-direction: column;
+}
+
+.react-calendar__navigation button {
+  font-size: 24px;  /* Увеличивает размер стрелок */
+  padding: 10px;    /* Увеличивает область клика */
 }

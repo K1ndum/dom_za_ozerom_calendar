@@ -3,21 +3,30 @@ import axios from "axios";
 import Calendar from "react-calendar";
 import "react-calendar/dist/Calendar.css";
 
+const PROXY_URL = "https://api.allorigins.win/raw?url=";
+const API_URL = "https://www.holiday.by/callbacks/dom/calendar-data.json?houseSlug=zaozeryelogoysk";
+
+const getBookedDates = async () => {
+  const response = await axios.get(PROXY_URL + API_URL, { responseType: "text" });
+  const data = JSON.parse(response.data);
+  return data.map(date => new Date(date));
+};
+
 const fetchBookedDates = async (setError, setLoading) => {
   try {
-    const response = await axios.get(
-      `https://www.holiday.by/callbacks/dom/calendar-data.json?houseSlug=zaozeryelogoysk`,
-      // `https://thingproxy.freeboard.io/fetch/https://www.holiday.by/callbacks/dom/calendar-data.json?houseSlug=zaozeryelogoysk`,
-      // `https://thingproxy.fr`,
-      { responseType: "text" }
-    );
-    const data = JSON.parse(response.data);
-    return data.map(date => new Date(date));
+    const data = await getBookedDates();
+    return data;
   } catch (error) {
-    console.error("Ошибка загрузки данных", error);
-    setError(true);
-    setLoading(false);
-    return [];
+    try {
+      console.log("Первая попытка не удалась, пробуем еще раз...", error);
+      const data = await getBookedDates();
+      return data;
+    } catch {
+      console.error("Вторая попытка загрузки не удалась", error);
+      setError(true);
+      setLoading(false);
+      return [];
+    }
   }
 };
 
@@ -63,7 +72,7 @@ const BookedDatesCalendar = () => {
       ) : (
         <div>
           <div className="calendar">
-            <Calendar tileClassName={tileClassName} />
+            <Calendar tileClassName={tileClassName} prev2Label={null} next2Label={null}/>
           </div>
           <div className="text">Забронированные даты &#10132; <span className="bookedExample"></span></div>
           <div className="text">Текущая дата &#10132; <span className="nowExample"></span></div>
