@@ -6,7 +6,8 @@ import "react-calendar/dist/Calendar.css";
 const fetchBookedDates = async (setError, setLoading) => {
   try {
     const response = await axios.get(
-      `https://thingproxy.freeboard.io/fetch/https://www.holiday.by/callbacks/dom/calendar-data.json?houseSlug=zaozeryelogoysk`,
+      `https://www.holiday.by/callbacks/dom/calendar-data.json?houseSlug=zaozeryelogoysk`,
+      // `https://thingproxy.freeboard.io/fetch/https://www.holiday.by/callbacks/dom/calendar-data.json?houseSlug=zaozeryelogoysk`,
       // `https://thingproxy.fr`,
       { responseType: "text" }
     );
